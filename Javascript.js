@@ -12,3 +12,12 @@ window.addEventListener("load", function() {
         window.scrollTo(0, 0); // sofort ganz nach oben scrollen
     }
 });
+window.addEventListener('scroll', () => {
+  const footer = document.getElementById('footer');
+  if ((window.innerHeight + window.pageYOffset) >= (document.body.offsetHeight - 100)) {
+    footer.classList.add('visible');
+  } else {
+    footer.classList.remove('visible');
+  }
+});
+

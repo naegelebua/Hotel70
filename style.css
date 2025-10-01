@@ -1,7 +1,14 @@
 html {
     scroll-behavior: smooth;
 }
-
+.header-bg {
+    height: 100vh;
+    background-image: url("Kulinarik.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 body#eins {
     margin: 0;
     padding: 0;
@@ -97,7 +104,8 @@ body#eins {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
-    background-color: DCDCDC;
+    background-color: #302F2F;
+    color:white;
 }
 
 .side-menu-left {
@@ -121,12 +129,12 @@ body#eins {
 .side-menu-left a {
     font-size: 28px;
     text-decoration: none;
-    color: #333;
+    color:white;
     transition: color 0.3s ease;
 }
 
 .side-menu-left a:hover {
-    color: #666;
+    color: white;
 }
 
 .close-btn {
@@ -137,6 +145,7 @@ body#eins {
     top: 20px;
     left: 20px;
     cursor: pointer;
+    color:white;
 }
 
 .side-menu-right img {
@@ -186,149 +195,5 @@ body#eins {
     font-family: Garamond;
 }
 
-/* Küche-Seite */
-body#küche {
-    margin: 0;
-    font-family: Garamond, serif;
-    background-color: #F5F5F5;
-    overflow-x: hidden;
-}
-
-/* Header mit Hintergrundbild */
-.header-bg {
-    height: 100vh;
-    background-image: url("Kulinarik.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.bild-text {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    font-size: 70px;
-    font-weight: 50;
-    color: white;
-    z-index: 1;
-}
-
-/* Textabschnitt */
-.content {
-    background-color: #F5F5F5;
-    color: black;
-    padding: 20px;
-    max-width: 900px;
-    margin-left: 500px;
-    box-sizing: border-box;
-    font-style: italic;
-    font-size: 35px;
-    margin-top: 20px;
-}
-
-.essen1 {
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-.content1 {
-    margin-left: 900px;
-    margin-top: -340px;
-    font-size: 25px;
-    color: black;
-}
-
-/* Bilderreihe */
-.bildessen-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.bildessen-container img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    margin-top: -27%;
-}
-
-/* Farbiger Trenner */
-.farbiger-abschnitt {
-    background-color: #302F2F;
-    margin: 30px;
-    margin-top: 20%;
-    width: 100%;
-    margin-left: -10px;
-    height: 400px;
-    padding: 5px;
-}
-
-/* Frühstücksbereich */
-.content2 {
-    font-size: 30px;
-    margin-left: 50px;
-    margin-top: 13%;
-}
-
-.frühstück {
-    margin-left: 55%;
-    margin-top: -13%;
-}
-
-.saal {
-    margin-top: 10%;
-}
-
-.saaltext {
-    font-size: 25px;
-    margin-left: 50px;
-    margin-top: 5%;
-    text-align: center;
-    color: white;
-}
-
-/* Zweiter Trenner */
-.farbiger-abschnitt2 {
-    background-color: #302F2F;
-    margin: 30px;
-    margin-top: -20%;
-    width: 100%;
-    margin-left: -10px;
-    height: 400px;
-    padding: 5px;
-}
-
-/* Weitere Bilderreihe */
-.bildessen-container2 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.bildessen-container2 img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    margin-top: 5%;
-}
 
 
-body#anreise{
-	margin: 0;
-    font-family: Garamond, serif;
-    background-color: #F5F5F5;
-    overflow-x: hidden;
-		}
-/* Header mit Hintergrundbild */
-.header-bg2 {
-    height: 100vh;
-    background-image: url("bildmenü.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixied;
-}
